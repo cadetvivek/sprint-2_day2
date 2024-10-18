@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinator Selector</title>
+  <style>
+
+/*         Style odd items in the first list with red text and red bul */
+ ul:nth-of-type(1) li:nth-child(odd) {
+ color: red;
+ }
+ ul:nth-of-type(1) li:nth-child(odd)::marker {
+ color: red;
+ }
+
+/*         Style the second list with pink bullets and black text */
+ ul:nth-of-type(2) li {
+ color: black;
+ }
+     ul:nth-of-type(2) li::marker {
+ color: rgb(198, 86, 208);
+ }
+</style>
+  
+</head>
+<body>
+  <ul id="list1">
+    <li>item-1</li>
+    <li>item-2</li>
+    <li>item-3</li>
+    <li>item-4</li>
+    <li>item-5</li>
+    <li>item-6</li>
+    <li>item-7</li>
+    <li>item-8</li>
+    <li>item-9</li>
+    <li>item-10</li>
+  </ul>
+  <ul>
+    <li>item-1</li>
+    <li>item-2</li>
+    <li>item-3</li>
+    <li>item-4</li>
+    <li>item-5</li>
+    <li>item-6</li>
+    <li>item-7</li>
+    <li>item-8</li>
+    <li>item-9</li>
+    <li>item-10</li>
+  </ul>
+</body>
+</html>
