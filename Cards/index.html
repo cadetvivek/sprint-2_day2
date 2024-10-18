@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+      }
+      .boxes {
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+      }
+      h1 {
+        text-align: center;
+        color: rgb(129, 50, 50);
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+      }
+      .box:hover {
+        opacity: 1; /* Fully visible when hovered */
+      }
+
+      .boxes .box:not(:hover) {
+        opacity: 0.5; /* Fade the other boxes to 50% opacity */
+        transition: opacity 0.3s ease; /* Smooth transition */
+      }
+      .box-1 {
+        background-color: yellow;
+      }
+      .box-2 {
+        background-color: rgb(222, 191, 238);
+      }
+      .box-3 {
+        background-color: red;
+      }
+      .box-4 {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CARDS</h1>
+      <div class="boxes">
+        <div class="box-1 box">1</div>
+        <div class="box-2 box">2</div>
+        <div class="box-3 box">3</div>
+        <div class="box-4 box">4</div>
+      </div>
+    </div>
+  </body>
+</html>
