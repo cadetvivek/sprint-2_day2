@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRICING</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        .container{
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+            
+        }
+        .header{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .pricing-cards{
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        .card{
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 2rem;
+
+        }
+        .card-header{
+            margin-bottom: 1rem;
+        }
+        .price{
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .features{
+            list-style: none;
+            padding: 0;
+
+        }
+        .features li{
+            margin-bottom: 0.5rem;
+        }
+        .features li::before{
+            content: "✓";
+            color: blue;
+            margin-right: 0.5rem;
+        }
+        .button{
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background-color: #8b5cf6;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+        .toggle-switch{
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            margin: 0 10px;
+        }
+        .toggle-switch input{
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #8b5cf6;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>One Price for Everythin</h1>
+            <p>The simplest pricing in the industry. Yo won't need a calculator for this.</p>
+
+        </header>
+        <div class="pricing-cards">
+            <div class="card">
+                <div class="card-header">
+                <h2>Pro</h2>
+                <p>Includes everything you need to your professional website</p>
+                </div>
+                <div class="toggle">
+                    <span>Bill Monthly</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox">
+
+                        <span class="slider"></span>
+                    </label>
+                    <span>Bill Yearly</span>
+                </div>
+                <div class="price">$20 <span>/ Site / Monthly (billed annually)</span></div>
+                <ul class="features">
+                    <li>Custom Domain</li>
+                    <li>GDPR Solution</li>
+                    <li>Beautiful Site Design</li>
+                    <li>Super-Fase Hoisting</li>
+                    <li>Analytics</li>
+                    <li>Custom Forms</li>
+                    <li>Blogging</li>
+                    <li>Password Protection</li>
+                    <li>Myltilingual Sites</li>
+                    <li>User Management</li>
+                    <li>Unlimited Pages</li>
+                    <li>Unlimited Team Members</li>
+                </ul>
+                <a href="" class="button">Get Started →</a>
+            </div>
+             <div class="card">
+                <div class="card-header">
+                    <h2>Basic</h2>
+                    <p>Publish your site for free with almost all pro featues.</p>
+                </div>
+                <div class="price"> Free  </div>
+                <ul class="features">
+                    <li>No Custom Domains</li>
+                    <li>"Made with Usmo" Branding</li>
+
+                </ul>
+                <p>No credit card required</p>
+                <a href="#" class="button">Get Started</a>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
